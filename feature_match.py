@@ -8,8 +8,9 @@ from tkinter import filedialog
 import tkinter
 
 #initiating the path
-path = glob.glob("/home/mst3/Downloads/images_vo/*.png")
+path = glob.glob("/home/yagnesh/Desktop/fyp/images_vo/*.png")
 #creating a list to store images
+path = sorted(path)
 images=[]
 i=0
 for file in path:
@@ -66,13 +67,16 @@ def extract(img1,img2):
 	# find the keypoints and descriptors with SIFT
 	
 	fast= cv.FastFeatureDetector_create(threshold = 5, nonmaxSuppression = True)
-	orb = cv.ORB_create(nfeatures=2000)
+	orb = cv.ORB_create(nfeatures=3000)
 	#kp, des = orb.detectAndCompute(gray_image, None)
 	# kp1, des1 = sift.detectAndCompute(img1,None)
 	# kp2, des2 = sift.detectAndCompute(img2,None)
 	kp1, des1 = orb.detectAndCompute(img1,None)
 	kp2, des2 = orb.detectAndCompute(img2,None)
 	feat_image = cv.drawKeypoints(img1, kp1, img1)
+	# show the image
+	cv.imshow('image', feat_image)
+	cv.waitKey(500)
 	# show the image
 	cv.imshow('image', feat_image)
 	cv.waitKey(500)
@@ -190,6 +194,9 @@ for i in range(0,len(images)-1):
 #plt.plot(trans_dir_z,trans_dir_x,color='red',label = "plotted trajectory")
 default_x_ticks = range(len(trans_dir_x))
 plt.plot(default_x_ticks, trans_dir_z)
-plt.xticks(default_x_ticks, trans_dir_x)
+plt.title("Trajectory of Camera")
+plt.xlabel("Translation in X direction")
+plt.ylabel("Translation in Y direction")
+# plt.xticks(default_x_ticks, trans_dir_x)
 plt.show()
-plt.title("monocular camera based plot")
+

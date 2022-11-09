@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /workspaces/Turtlebot2/devel/.private/turtlebot_teleop/setup.sh

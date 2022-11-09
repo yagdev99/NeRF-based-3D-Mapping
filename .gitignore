@@ -127,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+images_vo/*
+2022-10-16-10-13-50.bag
+camera_calibration/Camera_Roll/*
+camera_calibration/results/*

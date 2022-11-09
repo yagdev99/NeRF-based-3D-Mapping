@@ -1,0 +1,6 @@
+turtlebot/turtlebot_bringup
+/workspaces/Turtlebot2/devel/.private/turtlebot_bringup/cmake.lock /workspaces/Turtlebot2/devel/./cmake.lock
+/workspaces/Turtlebot2/devel/.private/turtlebot_bringup/etc/catkin/profile.d/25.turtlebot.sh /workspaces/Turtlebot2/devel/etc/catkin/profile.d/25.turtlebot.sh
+/workspaces/Turtlebot2/devel/.private/turtlebot_bringup/lib/pkgconfig/turtlebot_bringup.pc /workspaces/Turtlebot2/devel/lib/pkgconfig/turtlebot_bringup.pc
+/workspaces/Turtlebot2/devel/.private/turtlebot_bringup/share/turtlebot_bringup/cmake/turtlebot_bringupConfig-version.cmake /workspaces/Turtlebot2/devel/share/turtlebot_bringup/cmake/turtlebot_bringupConfig-version.cmake
+/workspaces/Turtlebot2/devel/.private/turtlebot_bringup/share/turtlebot_bringup/cmake/turtlebot_bringupConfig.cmake /workspaces/Turtlebot2/devel/share/turtlebot_bringup/cmake/turtlebot_bringupConfig.cmake

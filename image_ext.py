@@ -1,11 +1,3 @@
-
-# -*- coding: utf-8 -*-
-
-# Copyright 2016 Massachusetts Institute of Technology
-
-"""Extract images from a rosbag.
-"""
-
 import os
 import argparse
 
